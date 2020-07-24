@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Grid</title>
+      <style>
+        table th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+          padding: 10px;
+         }
+         th {
+         text-align: left;
+            }
+         
+       </style>
+    </head> 
+    <body>           <!-- Table starts -->
+      <table>
+        <tr>
+          
+          <th scope="col" colspan="3">Adult Fares</th>
+          <th colspan="3">Pay as you go<br />
+             peak  off-peak
+          </th> 
+        </tr>
+        <tr>
+          <th colspan="3">Zone 1 Only</th>
+          <td><b>$200</b></td>
+          <td><b>$150</b></td>
+        </tr>
+        <tr>
+          <th colspan="3">Zones 1-2</th>
+          <td><b>$220$</b></td>
+          <td><b>$270$</b></td>
+        </tr>
+      </table><br /><br />
+      
+            <!-- Table Ends -->                              
+
+                       <!-- Forms Start -->
+
+      <form action="http://www.example.com/profile.php">
+        <b><p style="font-size:110%;"> Please select your                           choice:</p></b>
+                        
+        <input type="radio" name="choice" value="zone 1 only peak"
+          checked="checked" /> Zone 1 only Peak
+          <input type="radio" name="choice" value="zone 1 only off peak"
+            checked="checked" /> Zone 1 only off Peak 
+      </form>
+      
+      <form action="http://www.example.com/profile.php"><br />
+        <b><p>What option do you prefer?</p></b>
+        <select name="zones">
+          <option value="zones 1-2 peak">zone 1-2 peak</option>
+          <option value="zones 1-2 off peak">zone 1-2 off peak</option>
+        </select>
+      </form><br /><br />
+      
+      <form action="http://www.example.com/upload.php"
+        method="post">
+        <b><p>Upload your ticket:</p></b>
+        <input type="file" name="user-ticket" /><br />
+        <input type="submit" value="Upload" />
+      </form><br /><br />
+      
+      <form action="http://www.example.com/subscribe.php">
+        <p>Subscribe to our email list:</p>
+        <input type="text" name="email" />
+        <input type="submit" name="subscribe"
+          value="Subscribe" />
+      </form><br /><br />
+      
+      
+      <form action="http://www.example.org/subscribe.php">
+        <p>Subscribe to our email list:</p>
+        <input type="text" name="email" />
+        <input type="image" src="subscribe.png"
+          width="180" height="80" />
+      </form><br /><br /><br />
+
+             <!-- Forms End -->
+
+
+                     <!-- Fieldset starts -->
+
+       <fieldset>
+        <legend><b>Contact details</b></legend>
+        <label>Email:<br />
+        <input type="text" name-"Email" /></label><br />
+        <label>Mobile:<br />
+        <input type="text" name-"Mobile" /></label><br />
+        <label>Telephone:<br />
+        <input type="text" name-"Telephone" /></label><br />
+      </fieldset><br /> 
+                          <!-- Fieldset Ends  -->
+      <iframe 
+        width="450"
+        hight="350"
+        seamless
+        src="http://maps.google.co.uk/maps?q=moma+new+york&amp;output=embed">
+      </iframe>
+
+    </body>
+   </html>
+       
